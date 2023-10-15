@@ -542,7 +542,7 @@ img {
   top: 0;
   left: 0;
 }
-/*modal window*/
+
 .modal {
   width: 408px;
   min-height: 584px;
@@ -621,7 +621,7 @@ img {
   border-color: #4d5ae5;
 }
 
-.modal-input:focus .modal-icon {
+.modal-input:focus + .modal-icon {
   fill: #4d5ae5;
 }
 .modal-icon {
