@@ -323,6 +323,10 @@ p {
   align-content: center;
   justify-content: center;
 }
+.our_team_social_list_link:hover,
+.our_team_social_list_link:focus {
+  background-color: #404bbf;
+}
 .our_team_social_icon {
   fill: #f4f4fd;
 }
