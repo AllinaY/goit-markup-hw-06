@@ -56,6 +56,8 @@ p {
 .header {
   border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
   background: var(--WHITE, #fff);
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 .header_container {
   display: flex;
@@ -86,8 +88,7 @@ p {
   align-items: center;
   gap: 40px;
 }
-.header_nav_menu_item {
-}
+
 .header_nav_menu_link {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -97,11 +98,29 @@ p {
   color: #2e2f42;
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header_nav_menu_link.current {
+  position: relative;
+}
+.header_nav_menu_link.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
 }
 .header_nav_menu_link:hover,
-.header_nav_menu_link:focus {
+.header_nav_menu_link:focus,
+.header_nav_menu_link.current:hover,
+.header_nav_menu_link.current:focus,
+.header_nav_menu_link.current:active {
   color: #404bbf;
 }
+
 .header_address {
   font-style: normal;
   margin-left: auto;
@@ -121,6 +140,7 @@ p {
   color: #434455;
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header_address_menu_link:hover,
 .header_address_menu_link:focus {
@@ -132,6 +152,15 @@ p {
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero-bc-pc.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .hero_container {
 }
@@ -182,6 +211,11 @@ p {
 }
 .benefits_menu_item {
   width: calc((100% - 24px * 3) / 4);
+}
+.benefits_menu_icon {
+  border: 1 px solid #8e8f99;
+  border-radius: 4px;
+  background-color: #f4f4fd;
 }
 .benefits_menu_item_name {
   font-family: 'Roboto', sans-serif;
@@ -235,6 +269,10 @@ p {
   width: 232px;
   padding: 32px 0;
   align-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
 }
 .our_team_menu_item_name {
   font-family: 'Roboto', sans-serif;
@@ -255,6 +293,24 @@ p {
   text-align: center;
   color: #434455;
 }
+.our_team_social_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+}
+
+.our_team_social_list_item {
+  width: 40px;
+  height: 40px;
+  align-content: center;
+  justify-content: center;
+  background-color: #4d5ae5;
+  fill: #ffffff;
+  border-radius: 50%;
+}
+
 /* #endregion our team */
 /* #region our portfolio */
 .our_portfolio {
