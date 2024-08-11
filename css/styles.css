@@ -375,7 +375,7 @@ p {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .our_portfolio_menu_item:hover,
-.our_portfolio_menu_item:focus .our_portfolio_menu_pic_container_text {
+.our_portfolio_menu_item:focus .p {
   transform: translateY(0%);
 }
 .our_portfolio_menu_item_pic_container {
