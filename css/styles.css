@@ -397,7 +397,7 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
 }
-.our_portfolio_menu_pic_container_text:hover.our_portfolio_menu_pic_container_text {
+.our_portfolio_menu_item:hover .our_portfolio_menu_pic_container_text {
   transform: translateY(0%);
 }
 .our_portfolio_menu_item_describtion {
