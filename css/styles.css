@@ -314,7 +314,6 @@ p {
   width: 40px;
   height: 40px;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our_team_social_list_link {
@@ -326,6 +325,7 @@ p {
   align-content: center;
   justify-content: center;
   align-items: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our_team_social_list_link:hover,
 .our_team_social_list_link:focus {
@@ -373,6 +373,8 @@ p {
 .our_portfolio_menu_item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.our_portfolio_menu_item:hover .p {
   transform: translateY(0%);
 }
 .our_portfolio_menu_item_pic_container {
@@ -421,10 +423,7 @@ p {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.our_portfolio_menu_item_text:hover,
-.our_portfolio_menu_item_text:focus {
-  transform: translateY(0%);
-}
+
 /* #endregion our portfolio */
 /* #region footer */
 .footer {
