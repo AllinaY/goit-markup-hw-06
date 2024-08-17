@@ -514,11 +514,11 @@
     <!-- #region modal window-->
     <div class="backdrop is-open">
       <div class="modal">
-        <btn class="modal_close_btn" type="button"
-          ><svg class="modal_close_btn_icon" width="8px" height="8px">
+        <button class="modal_close_btn" type="button">
+          <svg class="modal_close_btn_icon" width="8px" height="8px">
             <use href="./images/icons.svg#close-button-icon"></use>
           </svg>
-        </btn>
+        </button>
         <p class="modal_text">Leave your contacts and we will call you back</p>
         <form class="modal_window_form">
           <div class="modal_window_form_field">
@@ -526,16 +526,15 @@
               >Name
             </label>
             <div class="modal_window_input_wrap">
-              <svg class="modal_window_input_icon" width="12" height="12">
-                <use href="./images/icons.svg#name-icon"></use>
-              </svg>
               <input
                 class="modal_window_form_field_input"
                 id="user-name"
                 type="text"
                 name="user-name"
                 required
-              />
+              /><svg class="modal_window_input_icon" width="18" height="24">
+                <use href="./images/icons.svg#name-icon"></use>
+              </svg>
             </div>
           </div>
           <div class="modal_window_form_field">
@@ -543,15 +542,15 @@
               >Phone
             </label>
             <div class="modal_window_input_wrap">
-              <svg class="modal_window_input_icon" width="13" height="13">
-                <use href="./images/icons.svg#phone-icon"></use></svg
-              ><input
+              <input
                 class="modal_window_form_field_input"
                 id="user-tel"
                 type="tel"
                 name="user-tel"
                 required
-              />
+              /><svg class="modal_window_input_icon" width="13" height="13">
+                <use href="./images/icons.svg#phone-icon"></use>
+              </svg>
             </div>
           </div>
           <div class="modal_window_form_field">
@@ -559,16 +558,15 @@
               >Email
             </label>
             <div class="modal_window_input_wrap">
-              <svg class="modal_window_input_icon" width="15" height="12">
-                <use href="./images/icons.svg#email-icon"></use>
-              </svg>
               <input
                 class="modal_window_form_field_input"
                 id="user-email"
                 type="email"
                 name="user-email"
                 required
-              />
+              /><svg class="modal_window_input_icon" width="15" height="12">
+                <use href="./images/icons.svg#email-icon"></use>
+              </svg>
             </div>
           </div>
         </form>
