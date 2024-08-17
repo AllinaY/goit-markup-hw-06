@@ -608,4 +608,7 @@ p {
   color: #2e2f42;
   margin: 72px 24px 16px;
 }
+.modal_window_form {
+  margin: 24px;
+}
 /* #endregion modal window */
