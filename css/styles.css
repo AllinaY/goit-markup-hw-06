@@ -631,7 +631,7 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin: 24px 0 16px;
+  margin-bottom: 16px;
 }
 
 .modal_window_form_field {
