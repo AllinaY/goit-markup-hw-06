@@ -823,15 +823,13 @@ button {
 .footer_form_text {
   text-align: center;
   margin-bottom: 8px;
-}
-.footer {
-  margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: #fff;
 }
+
 .footer_form_box {
   display: flex;
   flex-wrap: wrap;
@@ -918,8 +916,8 @@ button {
     width: 264px;
   }
   .footer_btn {
-    margin-top: 0;
     margin-left: 24px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -941,11 +939,17 @@ button {
   .footer_text {
     width: 264px;
   }
+  .footer_social_menu {
+    margin-right: 80px;
+  }
   .footer_form {
     margin-left: auto;
   }
   .footer_form_input {
     width: 264px;
+  }
+  .footer_btn {
+    margin-bottom: 0;
   }
 }
 
