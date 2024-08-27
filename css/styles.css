@@ -269,6 +269,7 @@ button {
   gap: 40px;
 }
 .mobile_menu_nav_link {
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -288,6 +289,7 @@ button {
   gap: 24px;
 }
 .mobile_menu_address_link {
+  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -531,6 +533,7 @@ button {
   background: #f4f4fd;
   padding: 96px 0;
 }
+
 .our_team_title {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -617,6 +620,9 @@ button {
   fill: #f4f4fd;
 }
 @media screen and (min-width: 768px) {
+  .container.our_team_container {
+    width: 584px;
+  }
   .our_team_menu {
     gap: 64px 24px;
   }
@@ -625,6 +631,9 @@ button {
   }
 }
 @media screen and (min-width: 1158px) {
+  .container.our_team_container {
+    width: 1158px;
+  }
   .our_team_menu {
     flex-wrap: nowrap;
     gap: 24px;
@@ -713,7 +722,7 @@ button {
     gap: 72px 24px;
   }
   .our_portfolio_menu_item {
-    width: calc((100% - 24px) / 3);
+    width: calc((100% - 24px) / 2);
   }
   .our_portfolio_menu_item_describtion {
     width: 356px;
@@ -724,7 +733,7 @@ button {
     padding: 120px 0;
   }
   .our_portfolio_menu_item {
-    width: calc((100% - 24 * 5) / 6);
+    width: calc((100% - 48px) / 3);
     margin-right: 24px;
     margin-bottom: 48px;
     box-shadow: none;
@@ -736,6 +745,7 @@ button {
   .our_portfolio_menu_item:nth-child(n + 4) {
     margin-bottom: 0;
   }
+
   .our_portfolio_menu_item:hover,
   .our_portfolio_menu_item:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -889,8 +899,14 @@ button {
     align-content: flex-start;
     justify-content: flex-start;
   }
+  .footer_text {
+    margin-bottom: 0;
+  }
   .footer_social_text {
     text-align: left;
+  }
+  .footer_social_menu {
+    margin-bottom: 0;
   }
   .footer_form_text {
     text-align: left;
