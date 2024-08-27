@@ -734,8 +734,6 @@ button {
   }
   .our_portfolio_menu_item {
     width: calc((100% - 48px) / 3);
-    margin-right: 24px;
-    margin-bottom: 48px;
     box-shadow: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -894,6 +892,7 @@ button {
   .footer_container {
     display: flex;
     flex-wrap: wrap;
+    gap: 72px 24px;
   }
   .logo_footer {
     align-content: flex-start;
@@ -920,6 +919,7 @@ button {
   }
   .footer_btn {
     margin-top: 0;
+    margin-left: 24px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -928,6 +928,7 @@ button {
   }
   .footer_container {
     display: flex;
+    flex-wrap: nowrap;
     align-items: baseline;
   }
   .footer_logo_container {
